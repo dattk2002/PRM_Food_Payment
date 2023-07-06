@@ -51,36 +51,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="99dp"
-        android:layout_height="109dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="544dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/paypal" />
-
-    <EditText
-        android:id="@+id/editTextAmount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="544dp"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="Enter the amount"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/buttonPayment"
+        android:id="@+id/buttonPaymentStripe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="604dp"
-        android:text="Pay now"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="560dp"
+        android:text="Pay by Stripe"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

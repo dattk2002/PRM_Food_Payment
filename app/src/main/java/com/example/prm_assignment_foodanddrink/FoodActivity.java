@@ -67,8 +67,11 @@ public class FoodActivity extends AppCompatActivity {
 //        database.QueryData("Insert into ListFood values(null, 'Banh xeo Quang Nam', '28000đ')");
 //        database.QueryData("Insert into ListFood values(null, 'Banh uot Quang Tri', '30000đ')");
 //        database.QueryData("Insert into ListFood values(null, 'Hu tieu Sai Gon', '25000đ')");
-//        database.QueryData("DELETE FROM ListFood WHERE FoodName IN ('Banh canh ca loc', 'Bun bo Hue', 'Bun rieu cua', 'Mi quang Da Nang', 'Bun ca ro dong Hai Phong', 'Banh xeo Quang Nam', 'Banh uot Quang Tri', 'Hu tieu Sai Gon')");
         GetDataFood();
+
+//        Delete all food
+//        database.QueryData("DELETE FROM ListFood WHERE FoodName IN ('Banh canh ca loc', 'Bun bo Hue', 'Bun rieu cua', 'Mi quang Da Nang', 'Bun ca ro dong Hai Phong', 'Banh xeo Quang Nam', 'Banh uot Quang Tri', 'Hu tieu Sai Gon')");
+
 
     }
 

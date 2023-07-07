@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/image">
 
     <TextView
         android:id="@+id/textViewSignIn"
@@ -13,6 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="Sign Up Form"
+        android:textColor="#F8F3F3"
         android:textSize="25dp" />
 
     <EditText
@@ -25,7 +27,9 @@
         android:layout_marginTop="150dp"
         android:ems="10"
         android:hint="Username"
+        android:textColorHint="@color/white"
         android:inputType="textPersonName"
+        android:textColor="#FBF6F6"
         android:textSize="18dp" />
 
     <EditText
@@ -42,7 +46,10 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName"
+        android:textColor="#F4EFEF"
+        android:textColorHint="#F3EDED"
         android:textSize="18dp" />
+
     <EditText
         android:id="@+id/editTextConfirm"
         android:layout_width="match_parent"
@@ -54,6 +61,8 @@
         android:ems="10"
         android:hint="Confirm Password"
         android:inputType="textPersonName"
+        android:textColor="#F6F1F1"
+        android:textColorHint="#FBF6F6"
         android:textSize="18dp" />
 
     <TextView
@@ -64,6 +73,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="Already Account ? Sign In"
+        android:textColor="#FAF5F5"
         android:textSize="18dp" />
 
     <TextView
@@ -74,6 +84,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="-----Or-----"
+        android:textColor="#F6F4F4"
         android:textSize="18dp" />
 
     <Button

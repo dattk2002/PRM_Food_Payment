@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/image">
 
     <TextView
         android:id="@+id/textViewSignIn"
@@ -13,12 +14,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:gravity="center"
+        android:inputType="text"
         android:text="Sign In Form"
-        android:textStyle="bold"
-        android:textColor="#000000"
+        android:textColor="#FBF4F4"
 
         android:textSize="25dp"
-        android:inputType="text"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextUsername"
@@ -31,6 +32,8 @@
         android:ems="10"
         android:hint="Username"
         android:inputType="text"
+        android:textColor="#EFE6E6"
+        android:textColorHint="#ECEAEA"
         android:textSize="18dp" />
 
     <EditText
@@ -47,6 +50,8 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColor="#F6ECEC"
+        android:textColorHint="#F8F2F2"
         android:textSize="18dp" />
 
     <TextView
@@ -57,6 +62,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="Not Account Yet ? Create one"
+        android:textColor="#F4F0F0"
+        android:textColorHint="#F4EDED"
         android:textSize="18dp" />
 
     <TextView
@@ -67,6 +74,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="-----Or-----"
+        android:textColor="#FBFBFB"
         android:textSize="18dp" />
 
     <Button

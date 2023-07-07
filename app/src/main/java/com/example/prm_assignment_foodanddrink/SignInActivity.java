@@ -17,7 +17,7 @@ public class SignInActivity extends AppCompatActivity {
 
     private TextView txSignUp;
 
-    private DatabaseHelper databaseHelper;
+    private DatabaseUser databaseUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class SignInActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.editTextPassword);
         btnLogin = findViewById(R.id.buttonSignIn);
         txSignUp = findViewById(R.id.textViewCreateAccount);
-        databaseHelper = new DatabaseHelper(this);
+        databaseUser = new DatabaseUser(this);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +39,7 @@ public class SignInActivity extends AppCompatActivity {
                 if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password)) {
                     Toast.makeText(SignInActivity.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
                 } else {
-                    boolean isValidUser = databaseHelper.checkUser(username, password);
+                    boolean isValidUser = databaseUser.checkUser(username, password);
                     if (isValidUser) {
                         Toast.makeText(SignInActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
                         // Xử lý đăng nhập thành công

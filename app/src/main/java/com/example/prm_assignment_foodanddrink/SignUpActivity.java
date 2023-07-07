@@ -16,7 +16,7 @@ public class SignUpActivity extends AppCompatActivity {
     private Button btnSignUp;
 
     private TextView tvSignIn;
-    private DatabaseHelper databaseHelper;
+    private DatabaseUser databaseUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class SignUpActivity extends AppCompatActivity {
         btnSignUp = findViewById(R.id.buttonSignUp);
         etConfirmPassword = findViewById(R.id.editTextConfirm);
         tvSignIn = findViewById(R.id.textViewAlreadyAccount);
-        databaseHelper = new DatabaseHelper(this);
+        databaseUser = new DatabaseUser(this);
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +42,7 @@ public class SignUpActivity extends AppCompatActivity {
                 } else if (!password.equals(confirmPassword)) {
                     Toast.makeText(SignUpActivity.this, "Password and Confirm Password do not match", Toast.LENGTH_SHORT).show();
                 } else {
-                    boolean success = databaseHelper.addUser(username, password);
+                    boolean success = databaseUser.addUser(username, password);
                     if (success) {
                         Toast.makeText(SignUpActivity.this, "Account has activated", Toast.LENGTH_SHORT).show();
                         // Chuyển hướng đến màn hình đăng nhập
